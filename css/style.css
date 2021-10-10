@@ -1,12 +1,25 @@
-/* Navbar */
-a{
+html,body{
+    margin: 0;
+    padding: 0;
+}
+/* Nav bar tasarım başlangıcı */
+.nav a{
     font-family: arial, sans-serif;
     font-size: 12px;
-    font-weight: normal;
+    font-weight: normal;             /*Alt çizgi kaldırıldı. Renk ve font değerleri atandı.*/
     text-decoration: none;
     color: #5F6368;
+    opacity: 0.75;
 }
-button{
+
+.nav{
+    list-style-type: none; /*Yukarıdan 15px aralık ve liste öğelerinin stilini boş olarak atandı. */
+    padding: 30px 0 0 7px;
+    margin: 0;
+}
+
+/*Sign in butonunun tasarımı*/
+.btn{
     font-size: 12px;
     font-weight: bold;
     background-color: #4285F4;
@@ -15,57 +28,52 @@ button{
     border: none;
     width:65px;
     height:30px;
-}
-ul{
-    list-style-type: none;
-    overflow: hidden;
-}
-li{
-    float: right;
-}
-li a{
+    position: relative;
+    top:-27px;
     display: block;
-    text-align: center;
-    padding-left:10px;
-    text-decoration: none;
-    font-size:12px;
+    line-height: 28px;
+    margin: 0 15px 0 15px; 
 }
-a:hover{
-    text-decoration: underline;
+.btn:hover{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
 }
-.btn{
-    margin-right: 15px;
-   
+
+.left-bar li{
+    float:left; /*About ve Store'u sola yapıştırıyor.*/
 }
+.right-bar li{
+    float: right; /*Gmail, Images, Apps ve Sign in'i sağa yapıştırıyor. */ 
+}
+
+.text:hover{
+    text-decoration: underline; /*About,Store,Gmail ve Images üzerine gelindiğinde alt çizgi aktif hale geliyor*/
+}
+
 .clear{
-    clear: both;
+    clear: both; /*float değerlerini temizleme */
 }
 .google-apps{
     text-align: center;
-    color: #5F6368;
+    color: #5F6368; /*Google Apps logosunun renk değeri atandı ve ortalandı*/
 }
 .google-apps:hover{
-    color: #272727;
+    color: #272727; /*Google Apps logosunun üzerine gelindiğinde değişecek renk atandı.*/
 }
 .material-icons.md-18{
-    font-size: 18px; 
-}
-.nav{
-    margin-top:15px;
-}
-.nav-left{
-    float: left; /*About ve Store'u sola yapıştır ve ortala*/
-    text-align: center;
-}
-.spaced-text{
-    margin-left:15px; /*Textler sol taraftan 15px aralık*/
-}
-.nav-right{
-    float: right;
-    text-align: center; /*Gmail, Images, Apps ve Sign in'i sağa yapıştır ve ortala*/
+    font-size: 18px;  /*Google Apps logosunun boyutu ayarlandı*/
 }
 
-/* Navbar */
+.left-spaced{
+    margin-left:15px; /*sol taraftan 15px aralık*/
+}
+.double-left-spaced{
+    margin-left:30px; /*sol taraftan 30px aralık*/
+}
+.right-spaced{
+    margin-right: 30px; /*sağ taraftan 30px aralık*/
+}
+
+/* Nav bar tasarım sonu*/
 
 /* Logo */
 .logo{
@@ -74,7 +82,92 @@ a:hover{
 }
 /* Logo */
 
-/*Search Bar*/
+/*Search Bar tasarımının başı*/
+.search-icon{
+    position: relative;
+    top: 5px;
+    right:-10px;
+    color:#9AA0A6;
+    padding-right:13px;
+    margin-top: -5px;
+    font-size: 18px;
+}
+.search-bar{
+    margin:0 auto;
+    width: 590px;
+    border-radius: 30px;
+    border:1px solid #dcdcdc;
+}
+.search-bar:hover{
+    box-shadow: 1px 1px 8px 1px #dcdcdc; /*Search barının üzerine gelindiğinde aktif olacak gölge efekti*/
+  }
+.search-bar:focus-within{
+    box-shadow: 1px 1px 8px 1px #dcdcdc;
+    outline:none;
+  }
+.searchbar{
+    height:45px;
+    border:none;
+    width:500px;        /*Search barın boyutu ve font büyüklüğü değerleri ayarlandı*/
+    font-size:16px;     
+    outline: none;
+    
+  }
+.voice{
+    height:20px;
+    position:relative; /*Mikrofonun boyutu ve pozisyonu ayarlandı*/
+    top:5px;
+    left:10px;
+    padding-right: 7px;
+  }
+/*Search Bar tasarımının sonu*/ 
 
-  
-/*Search Bar*/  
+/* Alt Butonların tasarımın başı */
+.buttons{
+    margin-top:30px;
+    text-align: center;
+}
+.sub-btn{
+    background-color: #f5f5f5;
+    border:none;
+    color:#707070;
+    font-size:15px;
+    padding: 10px 20px;
+    margin:5px;
+    border-radius:4px;
+    outline:none;
+  }
+  .sub-btn:hover{
+    border: 1px solid #c8c8c8;
+    padding: 9px 19px;
+    color:#808080;
+  }
+  .sub-btn:focus{
+    border:1px solid #4885ed;
+    padding: 9px 19px;
+  }
+/* Alt Butonların tasarımın sonu */
+/* Footer tasarımının başı */
+.footer{
+    background-color:#F2F2F2;
+    position:fixed;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+}
+.footer a{
+    text-align: center;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #222;
+    opacity: 0.75;
+}
+.left-bar{
+    float: left;
+}
+.right-bar{
+    float: right;
+}
+/* Footer tasarımının sonu */
