@@ -1,0 +1,80 @@
+/* Navbar */
+a{
+    font-family: arial, sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    text-decoration: none;
+    color: #5F6368;
+}
+button{
+    font-size: 12px;
+    font-weight: bold;
+    background-color: #4285F4;
+    color: #fff;
+    border-radius: 2px;
+    border: none;
+    width:65px;
+    height:30px;
+}
+ul{
+    list-style-type: none;
+    overflow: hidden;
+}
+li{
+    float: right;
+}
+li a{
+    display: block;
+    text-align: center;
+    padding-left:10px;
+    text-decoration: none;
+    font-size:12px;
+}
+a:hover{
+    text-decoration: underline;
+}
+.btn{
+    margin-right: 15px;
+   
+}
+.clear{
+    clear: both;
+}
+.google-apps{
+    text-align: center;
+    color: #5F6368;
+}
+.google-apps:hover{
+    color: #272727;
+}
+.material-icons.md-18{
+    font-size: 18px; 
+}
+.nav{
+    margin-top:15px;
+}
+.nav-left{
+    float: left; /*About ve Store'u sola yapıştır ve ortala*/
+    text-align: center;
+}
+.spaced-text{
+    margin-left:15px; /*Textler sol taraftan 15px aralık*/
+}
+.nav-right{
+    float: right;
+    text-align: center; /*Gmail, Images, Apps ve Sign in'i sağa yapıştır ve ortala*/
+}
+
+/* Navbar */
+
+/* Logo */
+.logo{
+    padding-top: 109px;
+    text-align: center;
+}
+/* Logo */
+
+/*Search Bar*/
+
+  
+/*Search Bar*/  
